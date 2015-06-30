@@ -1,0 +1,478 @@
+
+/** KITT - STYLE SHEET - Help Arrow Box */
+
+#infoBox
+{
+	width: 300pt;
+	height: 100pt;
+
+	top: -100pt;
+	left: 150pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: relative;
+
+	opacity: 0.75;
+
+	visibility:visible;
+	text-align: center;
+	float: left;
+	font: bold 18pt arial;
+	color: #e04107;
+
+	-webkit-animation: infoBoxAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowIndex
+{
+	width: 300pt;
+	height: 200pt;
+
+	top: -50pt;
+	left: 200pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowIndex:after
+{
+	content: '';
+	position: absolute;
+	top: 0pt;
+	left: -100pt;
+
+	border-style: solid;
+	border-width: 100pt 95pt 100pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+#helpArrowWorking
+{
+	width: 300pt;
+	height: 50pt;
+
+	top: 25pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxWorkingAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowWorking:after
+{
+	content: '';
+	position: absolute;
+	top: 0pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+#helpArrowWarningsMenu
+{
+	width: 400pt;
+	height: 275pt;
+
+	top: 0pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxWarningsMenuAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowWarningsMenu:after
+{
+	content: '';
+	position: absolute;
+	top: 25pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+#helpArrowWarningsMenuCity
+{
+	width: 350pt;
+	height: 145pt;
+
+	top: 0pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxWarningsMenuAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowWarningsMenuCity:after
+{
+	content: '';
+	position: absolute;
+	top: 25pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+#helpArrowWarningsMenuAR
+{
+	width: 350pt;
+	height: 130pt;
+
+	top: 0pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxWarningsMenuAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowWarningsMenuAR:after
+{
+	content: '';
+	position: absolute;
+	top: 25pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+#helpArrowWarningsMenuNational
+{
+	width: 400pt;
+	height: 130pt;
+
+	top: 0pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxWarningsMenuAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowWarningsMenuNational:after
+{
+	content: '';
+	position: absolute;
+	top: 25pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+
+
+#helpArrowMapsMenu
+{
+	width: 400pt;
+	height: 260pt;
+
+	top: 0pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxMapsMenuAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowMapsMenu:after
+{
+	content: '';
+	position: absolute;
+	top: 25pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+#helpArrowMapsMenuRest
+{
+	width: 400pt;
+	height: 130pt;
+
+	top: 0pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxMapsMenuAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowMapsMenuRest:after
+{
+	content: '';
+	position: absolute;
+	top: 25pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+#helpArrowMapsMenuUtil
+{
+	width: 400pt;
+	height: 130pt;
+
+	top: 0pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxMapsMenuAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowMapsMenuUtil:after
+{
+	content: '';
+	position: absolute;
+	top: 25pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+#helpArrowMapsMenuLeisure
+{
+	width: 400pt;
+	height: 130pt;
+
+	top: 0pt;
+	left: 125pt;
+
+	background-color: #2c3e50;
+	border: 1pt solid #34495e;
+	position: absolute;
+
+	visibility: visible;
+	text-align: left;
+	padding-left: 10pt;
+	float: left;
+	font: bold 12pt arial;
+	color: #e04107;
+
+	-webkit-animation: helpBoxMapsMenuAnimation 1s; /* Chrome, Safari, Opera */
+}
+
+#helpArrowMapsMenuLeisure:after
+{
+	content: '';
+	position: absolute;
+	top: 25pt;
+	left: -25pt;
+
+	border-style: solid;
+	border-width: 25pt 20pt 25pt 0;
+	border-color: transparent #2c3e50 transparent transparent;
+}
+
+
+
+
+/*
+ *	< < < < < ANIMATIONS > > > > >
+ */
+
+
+/* 	Information Box Animation */
+
+@-webkit-keyframes infoBoxAnimation
+{
+	0%
+	{
+		left: 150pt;
+		top: -250pt;
+	}
+	
+	75%
+	{
+		left: 150pt;
+		top: -100pt;
+	}
+}
+
+
+/* 	Help Box Animation */
+
+@-webkit-keyframes helpBoxAnimation
+{
+	0%
+	{
+		top: -50pt;
+		left: 200pt;
+	}
+
+	25%
+	{
+		top: -50pt;
+		left: 200pt;
+	}
+	
+	75%
+	{
+		top: -50pt;
+		left: 200pt;
+	}
+
+	100%
+	{
+		top: -50pt;
+		left: 200pt;
+	}
+}
+
+
+/* 	Help Box Working Animation */
+
+@-webkit-keyframes helpBoxWorkingAnimation
+{
+	0%
+	{
+		top: 25pt;
+		left: 125pt;
+	}
+	
+	75%
+	{
+		top: 25pt;
+		left: 125pt;
+	}
+}
+
+
+/* 	Help Box Warnings Menu Animation */
+
+@-webkit-keyframes helpBoxWarningsMenuAnimation
+{
+	0%
+	{
+
+		left: 125pt;
+		top: 0pt;
+	}
+	
+	75%
+	{
+
+		left: 125pt;
+		top: 0pt;
+	}
+}
+
+
+@-webkit-keyframes helpBoxMapsMenuAnimation
+{
+	0%
+	{
+
+		left: 125pt;
+		top: 0pt;
+	}
+	
+	75%
+	{
+
+		left: 125pt;
+		top: 0pt;
+	}
+}

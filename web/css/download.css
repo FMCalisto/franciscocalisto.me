@@ -1,0 +1,123 @@
+body {
+  background: #ecf0f1;
+  font: 16px Helvetica;
+}
+
+section {
+  width: 325px;
+  margin: 20px auto;
+  padding: 20px 0;
+  border: 1px solid #ebebeb;
+  border-radius: 5px;
+  background: white;
+}
+
+h1 {
+  padding: 0 0 20px 20px;
+  font-size: 2em;
+  font-weight: 100;
+  color: #333;
+}
+
+h2 {
+  padding: 10px 20px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  color: #333;
+}
+h2 span {
+  font-weight: 100;
+  color: #999;
+}
+
+h3 {
+  padding: 10px 20px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  color: #333;
+}
+h3 span {
+  font-weight: 50;
+  color: #999;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+}
+
+a {
+  display: block;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 20px;
+  border-bottom: 1px solid #ebebeb;
+  color: #333;
+  text-decoration: none;
+  background: #f8f8f8;
+  transition: background ease-in-out .2s;
+}
+
+a:hover {
+  background: #dedede;
+}
+
+a span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  margin-right: 10px;
+  padding: 2px;
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  text-align: center;
+}
+
+a .zip {
+  background: #e67e22;
+}
+
+a .pdf {
+  background: #c0392b;
+}
+
+.owner h2 {
+  padding: 20px 0 10px 20px;
+  border: none;
+  color: #333;
+}
+
+.owner p {
+  padding: 0 20px;
+  color: #999;
+  font-weight: 100;
+}
+
+button {
+  display: block;
+  width: 285px;
+  height: 50px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  background: #1dd2af;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  transition: background ease-in-out .2s;
+}
+
+button:hover {
+  background: #1abc9c;
+}
+
+button:focus {
+  outline: none;
+}

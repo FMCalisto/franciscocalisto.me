@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+
+
+
+
+<html>
+
+	
+	<meta
+	
+		http-equiv = "Content-Type"
+		content = "text/html; charset = utf-8"
+		
+	>
+
+
+
+
+		<body
+
+			background = "../media/index/background_road.png"
+			style = "background-color: #1a1a1a;"
+
+		>
+
+       
+	        <link
+
+	        	rel = "stylesheet"
+	        	type = "text/css"
+	        	href = "/css/normalize.css"
+
+	        >
+
+	        </link>
+	        
+	        
+	        <link
+
+	        	rel = "stylesheet"
+	        	type = "text/css"
+	        	href = "/css/result-light.css"
+
+	        >
+
+	        </link>
+
+
+	        <link
+
+		    	rel = "stylesheet"
+		    	type = "text/css"
+		    	href = "../styles/iconsIndex.css"
+
+		    >
+
+		    </link>
+
+	        
+	        <link
+
+	        	rel = "stylesheet"
+	        	type = "text/css"
+	        	href = "../styles/maps_menu0.css"
+
+	        >
+
+	        </link>
+
+
+	        <link
+
+		    	rel = "stylesheet"
+		    	type = "text/css"
+		    	href = "../styles/arrowsMapsMenu.css"
+
+		    >
+
+		    </link>
+
+
+		    <link
+
+		    	rel = "stylesheet"
+		    	type = "text/css"
+		    	href = "../styles/helpBox.css"
+
+		    >
+
+		    </link>
+        
+        
+	        <script
+
+	        	type = 'text/javascript'
+	        	src = '../libs/jquery-1.7.1.js'
+
+	        >
+
+	        </script>
+
+
+	        <script
+
+	        	type = 'text/javascript'
+	        	src = '../functions/activeBoxMapsMenu.js'
+
+	        >
+
+	        </script>
+		
+      
+
+
+	        <title>
+
+	          IPM - Projecto - Maps
+
+	        </title>
+
+
+	        <div id = "mensagem">
+
+	      	
+		      	<h1 align = "top" >
+
+		      		<span
+
+		      			style = "opacity: 0.5"
+
+		      		>
+
+				      	<img
+
+		        		class = "header"
+		        		src = '../media/warnings/avisos.png'
+		        		width = "150pt"
+		        		height = "100pt"
+
+		        		>
+
+		        		</img>
+
+			      	</span>
+
+		      	</h1>
+
+
+	      	</div>
+
+
+	      	<div
+
+				id = "arrow_up"
+				class = "arrow_up"
+
+			>
+
+				<span
+
+		    	style = "opacity: 0.50"
+
+		    	>
+
+			  		<img
+
+			    		class = "arrow"
+			    		
+			    		src = '../media/index/arrow_up.png'
+			    		width = "50pt"
+			    		height = "50pt"
+
+			    	>
+
+			    	</img>
+
+		  		</span>
+
+			</div>
+
+
+	        <div
+
+	        	id = "main"
+	        	class = "icons"
+
+	        >
+		        
+
+		        <a 
+
+					id = "previous_page_link_index"
+					href = "../maps/maps_menu0.html"
+
+	        	>
+
+		        </a>
+
+		        <a
+
+		          id = "next_page_link_maps_menuHist"
+		          href = "../maps/mb.html"
+		        
+		        >
+
+		        </a>
+
+		        <a
+
+		          id = "next_page_link_maps_menuCult"
+		          href = "../maps/hospital.html"
+		        
+		        >
+
+		        </a>
+				
+				<a
+
+		          id = "next_page_link_maps_menuLazer"
+		          href = "../maps/metro.html"
+		        
+		        >
+
+		        </a>
+
+
+		        <a
+
+			      id = "next_page_link_help"
+			      href = "../help/help_maps_menu.html"
+			    
+			    >
+
+			    </a>
+
+		        
+				<ul>
+
+
+			        <li style = "list-style-type: none;">
+
+				    	<span
+
+				        	style = "opacity: 0.75"
+
+				        >
+				    	
+				        	<img
+
+				        		class = "menu"
+
+				        		src = '../media/maps/mb.png'
+				        		width="50pt"
+				        		height="50pt"
+
+				        	>
+
+				        	</img>
+
+				        	<img-text>
+
+				        		MB
+
+				        	</img-text>
+
+				    	</span>
+
+
+				    </li>
+
+
+				    <li style = "list-style-type: none;">
+
+				    	<span
+
+				        	style = "opacity: 0.75"
+
+				        >
+
+				        	<img
+
+				        		class = "menu"
+				        		
+				        		src = '../media/maps/hospital.png'
+				        		width="50pt"
+				        		height="50pt"
+
+				        	>
+
+				        	</img>
+
+				        	<img-text>
+
+				        		Hospital
+
+				        	</img-text>
+
+				        </span>
+
+				    </li>
+
+
+				    <li style = "list-style-type: none;">
+
+				    	<span
+
+				        	style = "opacity: 0.75"
+
+				        >
+
+				        	<img
+
+				        		class = "menu"
+				        		
+				        		src = '../media/maps/railway-station.png'
+				        		width = "50pt"
+				        		height = "50pt"
+
+				        	>
+
+				        	</img>
+
+				        	<img-text>
+
+				        		Metro
+
+				        	</img-text>
+
+				        </span>
+
+				    </li>
+
+			        <li
+
+				    	style = "list-style-type: none;"
+
+				    	class = "selected"
+				    	id = "helpArrowMapsMenuUtilFinalPos"
+
+				    >
+
+				    	<span
+
+				        	style = "opacity: 0.75"
+
+				        >
+				    	
+				        	<img
+
+				        		class = "menu"
+				        		
+				        		src = '../media/help/help.png'
+				        		width="50pt"
+				        		height="50pt"
+
+				        	>
+
+				        	</img>
+
+				        	<img-text>
+
+				        		Ajuda
+
+				        	</img-text>
+
+				        	<div
+
+								id = "helpArrowMapsMenuUtil"
+
+							>
+
+					  			<p>
+
+					  				Funcionalidade com a activação dos Mapas e Pontos de Interesse.
+
+					  				<p>
+
+					  				- Utilitário
+
+					  					<br>
+
+					  					. Multi-Banco em redor do utilizador;
+
+					  					<br>
+
+					  					. Hospitais mais próximos;
+
+					  					<br>
+
+					  					. Estações de Metro;
+
+					  					<br>
+
+					  				</p>
+
+					  				Para mais informações por favor leia o Manual de Utilizador.
+
+					  			</p>
+
+
+							</div>
+
+				    	</span>
+
+				    </li>
+
+		      
+				</ul>
+
+  			</div>
+
+
+  			<div
+
+				id = "arrow_down"
+				class = "arrow_down"
+
+			>
+
+				<span
+
+		    	style = "opacity: 0.50"
+
+		    	>
+
+			  		<img
+
+			    		class = "arrow"
+			    		src = '../media/index/arrow_down.png'
+			    		width = "50pt"
+			    		height = "50pt"
+
+			    	>
+
+			    	</img>
+
+		  		</span>
+
+			</div>
+
+      
+		
+
+		</body>
+	
+	
+	</meta>
+
+
+</html>

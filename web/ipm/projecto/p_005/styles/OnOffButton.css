@@ -1,0 +1,79 @@
+
+/** KITT - STYLE SHEET - Warnings - ON/OFF Bottun */
+
+*
+{
+    box-sizing border-box
+    padding 0
+    margin 0
+}
+
+$base = 20px
+$overlap = 1.1
+$width = 3
+$height = 3
+$leverOverlap = 0.2
+
+
+halfBackground(c1,c2)
+{
+    background linear-gradient( to bottom, c2, c2 49%, c1 50%, c1);
+}
+
+
+body
+{
+    display flex
+    align-items center
+    justify-content center
+}
+
+body,html
+{
+    min-height 100vh
+}
+
+.switch
+{
+    width $base * 10
+    height $base * 10
+    border-radius 50%
+    display flex
+    align-items center
+    justify-content center
+    background #e04107
+}
+
+
+.switch label
+{
+    width $base * $width
+    height $base * ($height + $overlap)
+    background grey
+    display inline-block
+    border-radius 100px
+    halfBackground #FF6961 #77DD77
+}
+ 
+
+
+.switch input
+{
+    display none
+}
+
+.lever
+{
+    margin-left $base * -1 * ( $leverOverlap /2)
+    margin-top $base * -1 * ( $leverOverlap /2)
+    height $base * ($height + $leverOverlap )
+    width $base * ( $width  + $leverOverlap)
+    border-radius 50%
+    transition 0.1s
+    background whitesmoke
+}
+
+.switch input:checked ~.lever
+{
+    margin-top $base * ($overlap -($leverOverlap /2))
+}

@@ -1,0 +1,60 @@
+
+/** KITT - STYLE SHEET - Warning ON */
+
+div.warningON img
+{
+	position: absolute;
+	top: 375pt;
+	left: 0pt;
+
+	width: 100pt;
+	height: 100pt;
+
+	position: relative;
+
+	-moz-animation: imgWarningAnimation 5s; /* Firefox */
+
+	-webkit-animation: imgWarningAnimation 5s; /* Chrome, Safari, Opera */
+}
+
+@-webkit-keyframes imgWarningAnimation
+{
+	0%
+	{
+		left: 60pt;
+		top: 100pt;
+	}
+	
+	25%
+	{
+		left: 125pt;
+		top: 100pt;
+	}
+
+	75%
+	{
+		left: 125pt;
+		top: 375pt;
+	}
+}
+
+@-moz-keyframes imgWarningAnimation
+{
+	0%
+	{
+		left: 60pt;
+		top: 100pt;
+	}
+	
+	25%
+	{
+		left: 125pt;
+		top: 100pt;
+	}
+
+	75%
+	{
+		left: 125pt;
+		top: 375pt;
+	}
+}

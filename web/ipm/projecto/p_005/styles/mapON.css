@@ -1,0 +1,57 @@
+
+/** KITT - STYLE SHEET - Map ON */
+
+div.mapON img
+{
+	position: absolute;
+	top: -100pt;
+	left: 250pt;
+
+	width: 420pt;
+	height: 225pt;
+
+	position: relative;
+	-webkit-animation: imgMapAnimation 5s; /* Chrome, Safari, Opera */
+	animation: imgMapAnimation 5s infinite;
+
+	&:hover .infoBox
+	{
+		visibility: visible;
+    }
+}
+
+@-webkit-keyframes imgMapAnimation
+{
+	0%
+	{
+		left: 75pt;
+		top: 15pt;
+	}
+	
+	75%
+	{
+		left: 125pt;
+		top: 15pt;
+	}
+}
+
+@keyframes imgMapAnimation
+{
+	0%
+	{
+		left: 0pt;
+		top: 0pt;
+	}
+	
+	25%
+	{
+		left: 50pt;
+		top: 0pt;
+	}
+
+	50%
+	{
+		left: 150pt;
+		top: 0pt;
+	}
+}

@@ -1,0 +1,16 @@
+
+/** KITT - STYLE SHEET - Index Arrows */
+
+div.arrow_up
+{
+	position: absolute;
+	top: 125pt;
+	left: 40pt;
+}
+
+div.arrow_down
+{
+	position: absolute;
+	top: 325pt;
+	left: 40pt;
+}

@@ -1,0 +1,19 @@
+
+/** KITT - STYLE SHEET - Selection List Style */
+
+li.selected
+{
+	color: blue;
+	border: solid #2c3e50;
+	width: 42pt;
+	height: 42pt;
+
+	box-sizing: border-box;
+	float: center;
+
+	/*flex-flow: row rap;*/
+	display: flex;
+	/*align-content: space-around;*/
+
+	opacity: 0.75;
+}

@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+
+
+
+
+  <html>
+
+
+
+
+      <body
+
+      	background = "./media/fundo.jpg"
+      	style = "background-color: #1a1a1a;"
+
+      >
+        
+        <meta
+
+        	http-equiv = "content-type"
+        	content = "text/html; charset = UTF-8"
+
+        >
+
+        </meta>
+
+
+        <title>
+
+          IPM - Aula 7 - Warnings
+
+        </title>
+
+
+        <div id = "main">
+        
+	        <script
+
+	        	type = 'text/javascript'
+	        	src = './libs/jquery-1.7.1.js'
+
+	        >
+
+	        </script>
+
+	        
+	        <link
+
+	        	rel = "stylesheet"
+	        	type = "text/css"
+	        	href = "/css/normalize.css"
+
+	        >
+
+	        </link>
+	        
+	        
+	        <link
+	        	
+	        	rel = "stylesheet"
+	        	type = "text/css"
+	        	href = "/css/result-light.css"
+
+	        >
+
+	        </link>
+
+	        
+	        <style type = 'text/css'>
+
+	          	li.selected
+	          	{
+	          		color: blue;
+	          		border-sizing: border-box;
+	          		border: 2pt solid gray;
+	          		width: 11%
+	          	} 
+	        
+	        </style>
+	        
+
+	        <a 
+
+	          id = "previous_page_link_menu1"
+	          href = "./warnings_menu1.html"
+
+	        >
+
+	        </a>
+
+	        <a
+
+	          id = "next_page_link_activar"
+	          href = "./index_warnings_nacional_activo.html"
+	        
+	        >
+
+	        </a>
+
+	        <a
+
+	          id = "next_page_link_desactivar"
+	          href = "./index.html"
+	        
+	        >
+
+	        </a>
+
+
+	        <script type = 'text/javascript'>
+
+	          function Forward()
+	          {
+	            alert("Forward");
+	            window.location = nextURL
+	          }
+
+	          function Back()
+	          {
+	            alert("Back")
+	            window.location = prevURL
+	          }
+
+
+	          $(window).load(
+	            function()
+	            {
+	            
+	              var li = $('li'); 
+	              var liSelected;
+	              var cont = 0;
+	              
+	              $(window).keydown(
+	                function(e)
+	                {
+	                  e = e || window.event;
+
+	                  if(cont === 0)
+	                  {
+	                  	var nextPage = $("#next_page_link_activar")
+	                    var prevPage = $("#previous_page_link_menu1")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+
+	                  if(cont === 1)
+	                  {
+	                    var nextPage = $("#next_page_link_desactivar")
+	                    var prevPage = $("#previous_page_link_menu1")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+
+	                  if(cont === 2)
+	                  {
+	                  	var nextPage = $("#next_page_link_activar")
+	                    var prevPage = $("#previous_page_link_menu1")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+	                  
+	                  if(e.which === 38 && cont != 2)
+	                  {
+	                    if(liSelected)
+	                    {
+	                      liSelected.removeClass('selected');
+	                      next = liSelected.next();
+	                      cont = 2;
+
+	                      if(next.length > 0)
+	                      {
+	                        liSelected = next.addClass('selected');
+	                      }
+
+	                      else
+	                      {
+	                        liSelected = li.eq(0).addClass('selected');
+	                      }
+	                    }
+
+	                    else
+	                    {
+	                        liSelected = li.eq(0).addClass('selected');
+	                    }
+	                  }
+
+	                  else if(e.which === 40 && cont != 1)
+	                  {
+	                    cont = 1;
+
+	                    if(liSelected)
+	                    {
+	                      liSelected.removeClass('selected');
+	                      next = liSelected.prev();
+
+	                        if(next.length > 0)
+	                        {
+	                          liSelected = next.addClass('selected');
+	                        }
+
+	                        else
+	                        {
+	                          liSelected = li.last().addClass('selected');
+	                        }
+	                    }
+
+	                    else
+	                    {
+	                      liSelected = li.last().addClass('selected');
+	                    }
+	                  }
+
+	                  else if(e.which === 39)
+	                  {
+	                    Forward(nextURL);
+	                  }
+
+	                  else if(e.which === 37)
+	                  {
+	                    Back(prevURL);
+	                  }
+
+	                }
+	              );
+
+	            }
+	          );
+
+	        </script>
+
+
+	        <div id = "mensagem">
+
+      	
+		      	<h1 align = "justify" >
+
+			      	<font face = "Verdana, Calibri, Ariel, Georgia">
+
+			      		Avisos de Ultrapassagem
+
+			      	</font>
+
+		      	</h1>
+
+
+      		</div>
+
+
+			<div id = "Activo" align = "left">	
+
+				<ul>
+
+					<li style = "list-style-type: none;">
+
+						<div>
+
+							<form
+
+								method = "link"
+								action = "./index_warnings_nacional_activo.html"
+
+							>
+
+	    						<input
+
+	    							type = "submit"
+	    							value = "Activar"
+
+	    						>
+
+	    						</input>
+
+	    					</form>
+
+						</div>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+
+			<div id = "Desactivo" align = "left">
+
+				<ul>
+
+					<li style = "list-style-type: none;">
+
+						<div>
+
+							<form
+
+								method = "link"
+								action = "./index.html"
+
+							>
+
+	    						<input
+
+	    							type = "submit"
+	    							value = "Desactivar"
+
+	    						>
+
+	    						</input>
+
+	    					</form>
+
+						</div>
+
+					</li>
+
+				</ul>
+
+			</div>
+
+
+      </div>
+
+      
+    </body>
+
+
+  </html>

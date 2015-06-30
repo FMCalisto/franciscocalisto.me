@@ -1,0 +1,11 @@
+
+/** KITT - STYLE SHEET - Font Opacity - Index */
+
+#foo
+{
+	color: #000; 					/* Fallback for older browsers */
+	color: rgba(0, 0, 0, 0.5);
+
+	font-size: 16pt;
+	font-family: Verdana, Calibri, Arial, Georgia, sans-serif;
+}

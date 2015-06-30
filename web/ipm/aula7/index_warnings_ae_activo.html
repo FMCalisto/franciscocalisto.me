@@ -1,0 +1,301 @@
+
+<!DOCTYPE html>
+
+
+
+
+  <html>
+
+
+
+
+      <body
+
+      	background = "./media/fundo.jpg"
+      	style = "background-color: #1a1a1a;"
+
+      >
+        
+        <meta
+
+        	http-equiv = "content-type"
+        	content = "text/html;charset = UTF-8"
+
+        >
+
+        </meta>
+
+
+        <title>
+
+          IPM - Aula 7 - Home
+
+        </title>
+
+
+        <div id = "main">
+        
+	        <script
+
+	        	type = 'text/javascript'
+	        	src = './libs/jquery-1.7.1.js'
+
+	        >
+
+	        </script>
+
+	        
+	        <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+
+	        </link>
+	        
+	        
+	        <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+	        </link>
+
+	        
+	        <style type='text/css'>
+
+	          	li.selected
+	          	{
+	          		color: blue;
+	          		border: 2px solid #000;
+	          		border-fit: clip;
+	          		width: 50pt;
+	          	}
+	        
+	        </style>
+	        
+
+	        <a 
+
+	          id = "previous_page_link_index"
+	          href = "./index.html"
+
+	        >
+
+	        </a>
+
+	        <a
+
+	          id = "next_page_link_calls"
+	          href = "./calls_menu1.html"
+	        
+	        >
+
+	        </a>
+
+	        <a
+
+	          id = "next_page_link_maps"
+	          href = "./maps_menu1.html"
+	        
+	        >
+
+	        </a>
+
+	        <a
+
+	          id = "next_page_link_warnings"
+	          href = "./warnings_menu1.html"
+	        
+	        >
+
+	        </a>
+
+
+	        <script type='text/javascript'>
+
+	          function Forward()
+	          {
+	            alert("Forward");
+	            window.location = nextURL
+	          }
+
+	          function Back()
+	          {
+	            alert("Back")
+	            window.location = prevURL
+	          }
+
+
+	          $(window).load(
+	            function()
+	            {
+	            
+	              var li = $('li'); 
+	              var liSelected;
+	              var cont = 0;
+	              
+	              $(window).keydown(
+	                function(e)
+	                {
+	                  e = e || window.event;
+
+	                  if(cont === 0)
+	                  {        
+	                    var nextPage = $("#next_page_link_calls")
+	                    var prevPage = $("#previous_page_link_index")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+
+	                  if(cont === 1)
+	                  {
+	                    var nextPage = $("#next_page_link_maps")
+	                    var prevPage = $("#previous_page_link_index")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+
+	                  if(cont === 2)
+	                  {
+	                    var nextPage = $("#next_page_link_warnings")
+	                    var prevPage = $("#previous_page_link_index")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+	                  
+	                  if(e.which === 40 && cont != 2)
+	                  {
+	                    if(liSelected)
+	                    {
+	                      liSelected.removeClass('selected');
+	                      next = liSelected.next();
+	                      cont++;
+	                      cont%=3;
+
+	                      if(next.length > 0)
+	                      {
+	                        liSelected = next.addClass('selected');
+	                      }
+
+	                      else
+	                      {
+	                        liSelected = li.eq(0).addClass('selected');
+	                      }
+	                    }
+
+	                    else
+	                    {
+	                        liSelected = li.eq(0).addClass('selected');
+	                    }
+	                  }
+
+	                  else if(e.which === 38 && cont != 0)
+	                  {
+	                    cont--;
+
+	                    if(liSelected)
+	                    {
+	                      liSelected.removeClass('selected');
+	                      next = liSelected.prev();
+
+	                        if(next.length > 0)
+	                        {
+	                          liSelected = next.addClass('selected');
+	                        }
+
+	                        else
+	                        {
+	                          liSelected = li.last().addClass('selected');
+	                        }
+	                    }
+
+	                    else
+	                    {
+	                      liSelected = li.last().addClass('selected');
+	                    }
+	                  }
+
+	                  else if(e.which === 39)
+	                  {
+	                    Forward(nextURL);
+	                  }
+
+	                  else if(e.which === 37)
+	                  {
+	                    Back(prevURL);
+	                  }
+
+	                }
+	              );
+
+	            }
+	          );
+
+	        </script>
+
+
+	      <ul>
+
+
+	        <li style = "list-style-type: none;">
+	        	
+	        	<img class = "arrow" src = './media/calls.jpg'>
+
+	        	</img>
+
+	        </li>
+
+
+	        <li style = "list-style-type: none;">
+
+	        	<img class = "arrow" src = './media/maps.jpg' />
+
+	        	</img>
+
+	        </li>
+
+
+	        <li class = "arrow" style = "list-style-type: none;">
+
+	        	<img src = './media/warnings.jpg'>
+
+	        	</img>
+
+	        </li>
+
+	      
+	      </ul>
+
+
+      </div>
+
+
+      <div id = "mensagem">
+
+      	
+      	<h1 align = "center">
+
+      		Bem-vindo ao KITT
+
+      	</h1>
+
+
+      </div>
+
+
+		<div
+
+			id = "activados"
+			float: right
+			text-align: top
+
+		>
+
+			<img src = './media/ae.jpg' width = 5%>
+
+		</div>
+
+
+
+      
+    </body>
+
+
+  </html>

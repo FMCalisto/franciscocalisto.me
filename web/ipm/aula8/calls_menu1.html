@@ -1,0 +1,320 @@
+
+<!DOCTYPE html>
+
+
+
+
+  <html>
+
+
+
+
+      <body
+
+      	background = "./media/fundo.jpg"
+      	style = "background-color: #1a1a1a;"
+
+      >
+        
+        <meta
+
+        	http-equiv = "content-type"
+        	content = "text/html;charset = UTF-8"
+
+        >
+
+        </meta>
+
+
+        <title>
+
+          IPM - Aula 7 - Home
+
+        </title>
+
+
+        <div id = "main">
+        
+	        <script
+
+	        	type = 'text/javascript'
+	        	src = './libs/jquery-1.7.1.js'
+
+	        >
+
+	        </script>
+
+	        
+	        <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+
+	        </link>
+	        
+	        
+	        <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+	        </link>
+
+	        
+	        <style type='text/css'>
+
+	          	li.selected
+	          	{
+	          		color: blue;
+	          		border: solid gray;
+	          		width: 45pt;
+
+	          		box-sizing: border-box;
+	          		float: center;
+	          	}
+	        
+	        </style>
+	        
+
+	        <a 
+
+	          id = "previous_page_link_index"
+	          href = "./index.html"
+
+	        >
+
+	        </a>
+
+	        <a
+
+	          id = "next_page_link_calls_maria"
+	          href = "./calls_Maria.html"
+	        
+	        >
+
+	        </a>
+
+	        <a
+
+	          id = "next_page_link_calls_joana"
+	          href = "./calls_Joana.html"
+	        
+	        >
+
+	        </a>
+
+	         <a
+
+	          id = "next_page_link_calls_mariana"
+	          href = "./calls_Mariana.html"
+	        
+	        >
+
+	        </a>
+	        
+	         <a
+
+	          id = "next_page_link_calls_teresa"
+	          href = "./calls_Teresa.html"
+	        
+	        >
+
+	        </a>
+	        
+	        <a
+
+	          id = "next_page_link_calls_pedro"
+	          href = "./calls_Pedro.html"
+	        
+	        >
+
+	        </a>
+
+
+
+
+	        <script type='text/javascript'>
+
+	          function Forward()
+	          {
+	            alert("Forward");
+	            window.location = nextURL
+	          }
+
+	          function Back()
+	          {
+	            alert("Back")
+	            window.location = prevURL
+	          }
+
+
+	          $(window).load(
+	            function()
+	            {
+	            
+	              var li = $('li'); 
+	              var liSelected;
+	              var cont = 0;
+	              
+	              $(window).keydown(
+	                function(e)
+	                {
+	                  e = e || window.event;
+
+	                  if(cont === 0)
+	                  {        
+	                    var nextPage = $("#next_page_link_calls_maria")
+	                    var prevPage = $("#previous_page_link_index")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+
+	                  if(cont === 1)
+	                  {
+	                    var nextPage = $("#next_page_link_calls_joana")
+	                    var prevPage = $("#previous_page_link_index")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+
+	                  if(cont === 2)
+	                  {
+	                    var nextPage = $("#next_page_link_calls_mariana")
+	                    var prevPage = $("#previous_page_link_index")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+	                  
+	                  if(cont === 3)
+	                  {
+	                    var nextPage = $("#next_page_link_calls_teresa")
+	                    var prevPage = $("#previous_page_link_index")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+	                  
+	                  if(cont === 4)
+	                  {
+	                    var nextPage = $("#next_page_link_calls_pedro")
+	                    var prevPage = $("#previous_page_link_index")
+
+	                    nextURL = nextPage.attr("href")
+	                    prevURL = prevPage.attr("href")
+	                  }
+	                  
+	                  if(e.which === 40 && cont != 4)
+	                  {
+	                    if(liSelected)
+	                    {
+	                      liSelected.removeClass('selected');
+	                      next = liSelected.next();
+	                      cont++;
+	                      cont%=5;
+
+	                      if(next.length > 0)
+	                      {
+	                        liSelected = next.addClass('selected');
+	                      }
+
+	                      else
+	                      {
+	                        liSelected = li.eq(0).addClass('selected');
+	                      }
+	                    }
+
+	                    else
+	                    {
+	                        liSelected = li.eq(0).addClass('selected');
+	                    }
+	                  }
+
+	                  else if(e.which === 38 && cont != 0)
+	                  {
+	                    cont--;
+
+	                    if(liSelected)
+	                    {
+	                      liSelected.removeClass('selected');
+	                      next = liSelected.prev();
+
+	                        if(next.length > 0)
+	                        {
+	                          liSelected = next.addClass('selected');
+	                        }
+
+	                        else
+	                        {
+	                          liSelected = li.last().addClass('selected');
+	                        }
+	                    }
+
+	                    else
+	                    {
+	                      liSelected = li.last().addClass('selected');
+	                    }
+	                  }
+
+	                  else if(e.which === 39)
+	                  {
+	                    Forward(nextURL);
+	                  }
+
+	                  else if(e.which === 37)
+	                  {
+	                    Back(prevURL);
+	                  }
+
+	                }
+	              );
+
+	            }
+	          );
+
+	        </script>
+
+
+	      <ul>
+			 
+			 <div id = "mensagem">
+
+      	
+      	<h1 align = "center">
+
+      		Chamadas
+
+      	</h1>
+
+
+      </div>
+			
+			<p>Escolha o contacto a quem pretende ligar:</p>
+	        <!-- Codes by HTML.am -->
+<!-- <div style="width:110px;height:150px;line-height:3em;overflow:auto;padding:5px;color:#000;scrollbar-base-color:#DEBB07;border:1px solid #000;background-color: #FCFADD"> -->
+<columns>
+<li style = "list-style-type: none;">Maria</li>
+<li style = "list-style-type: none;">Joana</li>
+<li style = "list-style-type: none;">Mariana</li>
+<li style = "list-style-type: none;">Teresa</li>
+<li style = "list-style-type: none;">Pedro</li>
+<!-- <li style = "list-style-type: none;">Guilherme</li>
+<li style = "list-style-type: none;">Daniela</li>
+<li style = "list-style-type: none;">Anabela</li>
+<li style = "list-style-type: none;">Pedro</li>
+<li style = "list-style-type: none;">Rodrigo</li> -->
+</columns>
+</div>
+
+	        
+	      </ul>
+
+
+      </div>
+
+
+<!-- here was div -->
+
+
+
+      
+    </body>
+
+
+  </html>

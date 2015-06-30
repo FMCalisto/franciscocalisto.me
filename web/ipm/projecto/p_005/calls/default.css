@@ -1,0 +1,131 @@
+/* KITT - STYLE SHEET - Calls style sheet
+This redefines all styles used before because
+this functionality was done with a single (and different)
+html file and to match the other menus, this had to be done */
+
+body
+{
+	margin: 0;
+    padding: 0;
+	overflow: hidden;
+	background-image:url('../media/index/background_road.png');
+	/*background-size:800px 600px; */
+	background-repeat:no-repeat;
+}
+
+.navState
+{
+	opacity: 0.5;
+}
+
+.arrow img
+{
+	width: 38pt;
+	height: 38pt;
+	position: relative;
+	opacity: 0.5;
+}
+
+.menuItem
+{
+	opacity: 0.5;
+        width: 200pt;
+}
+
+.selected
+{
+	position: relative;
+	left: 75pt;
+	top: 0pt;
+	float: center;
+
+	opacity: 0.65;
+	
+	-webkit-animation: imgAnimation 1.5s; /* Chrome, Safari, Opera */
+
+}
+
+.menuItem img
+{
+	width: 150pt;
+	height: 50pt;
+	position: relative;
+	left: -25pt;
+	padding: 0pt;
+}
+
+.menuItem.selected img
+{
+	width: 200pt;
+	height: 67pt;
+}
+
+.menuBtn img
+{
+opacity:0.5;
+	width: 50pt;
+	height: 50pt;
+	position: relative;
+	left: 0pt;
+	padding: 0pt;
+}
+
+.menuBtn.selected img
+{
+	width: 75pt;
+	height: 75pt;
+}
+
+
+span
+{
+	visibility:hidden;
+}
+
+.menuItem.selected span
+{
+	visibility: visible;
+	font: bold 18pt arial;
+	color: #e04107;
+        display: block;
+        text-align: center;
+        position: relative;
+        left: -20pt;
+}
+
+.menuBtn.selected span
+{
+	visibility:visible;
+	text-align: center;
+	font: bold 18pt arial;
+	color: #e04107;
+	position: relative;
+	left: 20pt;
+	top: -40pt;
+}
+
+span.infomsg
+{
+        visibility:visible;
+        font: bold 18pt arial;
+        color: #e04107;
+        opacity: 0.5;
+}
+
+
+/* Image Animation */
+
+@-webkit-keyframes imgAnimation
+{
+	0%
+	{
+		left: 0pt;
+		top: 0pt;
+	}
+	
+	100%
+	{
+		left:75pt;
+		top:0pt;
+	}
+}
